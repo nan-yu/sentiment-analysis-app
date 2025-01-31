@@ -1,0 +1,33 @@
+{
+  "name": "sentiment-analysis-server",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "author": "nanyu",
+  "dependencies": {
+    "@genkit-ai/firebase": "^0.9.12",
+    "@genkit-ai/google-cloud": "^0.9.12",
+    "@genkit-ai/googleai": "^0.9.12",
+    "@genkit-ai/vertexai": "^0.9.12",
+    "genkit": "^0.9.12",
+    "next": "15.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/mustache": "^4.2.5",
+    "genkit-cli": "^0.9.7",
+    "typescript": "^4.9.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nan-yu/sentiment-analysis-app.git"
+  }
+}

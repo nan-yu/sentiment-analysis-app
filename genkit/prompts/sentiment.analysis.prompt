@@ -1,0 +1,15 @@
+---
+model: vertexai/gemini-1.5-flash
+config:
+    temperature: 0.8
+    topK: 64
+    topP: 0.8
+    maxOutputTokens: 8192
+    responseMimeType": "application/json"
+input:
+    schema: analyzeRequestSchema
+output:
+    schema: analyzeResponseSchema
+---
+---
+Given the list of comments about {{topic}}: {{comments}}, please return a list of positive aspects and a list of negative aspects.
